@@ -1,6 +1,10 @@
 **Name:** Dominique Sutherland 
 **Student ID:** 101381790
 
+[Github Repository](https://github.com/DomoSutherland/website-redesign)
+[Live Page](https://domosutherland.github.io/website-redesign/)
+
+
 ## Project Description
 This project is a redesign of the Goodreads website, created as part of a web development assignment.  
 The site focuses on browsing books, tracking reading activity, and encouraging users to sign up.
