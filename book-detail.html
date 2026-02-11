@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Details | Goodreads</title>
+  
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/book-detail.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/browse.css">
+  <link rel="stylesheet" href="css/home_content.css">
+  <link rel="stylesheet" href="css/signup.css">
+
+</head>
+<body>
+
+  
+  <header>
+    <div class="nav-bar"> <!--All elements in the navigation bar-->
+
+        <div class="logo">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Goodreads_logo_2025.svg" 
+                alt="Goodreads"
+            />
+        </div>
+
+        <nav> <!--Navigation links-->
+            <a href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="#My Books">My Books</a>
+            <a href="#Community">Community</a>
+        </nav>
+
+        <div class="search-bar-header">
+            <input type="text" placeholder="Search..." />
+        </div>
+
+        <div class="header-actions"> <!--User action buttons-->
+            <button class="icon-button" aria-label="Notifications">
+                <svg viewBox="0 0 24 24">
+                <path d="M12 22a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 22zm6-6V11a6 6 0 1 0-12 0v5l-2 2v1h16v-1l-2-2z"/>
+                </svg>
+            </button>
+
+            <button class="icon-button" aria-label="Profile">
+                <svg viewBox="0 0 24 24">
+                <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/>
+                </svg>
+            </button>
+
+            <!--<span class="user-icon">Sarah M.</span> -->
+            <span>Sarah M.</span>
+            <a href="signup.html" class="nav-signup">Sign Up</a>
+        </div>
+               
+    </div>
+  </header>
+
+  <!-- MAIN BOOK DETAIL -->
+  <main class="book-detail-page container">
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+      <a href="#">Home</a> 
+      <a href="#">Browse</a> 
+      <span>The Starless Sea</span>
+    </div>
+    
+    <section class="book-detail">
+      
+      <div class="book-left">
+        <div class="book-cover">
+          <img src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1737131981i/222490389._SX300_.jpg" alt="Book Cover">
+        </div>
+        <div class="book-actions">
+          <button class="btn btn-primary">Add to Currently Reading</button>
+          <button class="btn btn-outline">Save</button>
+          <button class="btn btn-outline">Share</button>
+        </div>
+        
+        <div class="stats">
+          <div><span>Pages:</span> 304</div>
+          <div><span>Published:</span> August 13, 2020</div>
+          <div><span>Publisher:</span> Viking</div>
+          <div><span>ISBN:</span> 9780525559474</div>
+          <div><span>Language:</span> English</div>
+        </div>
+
+      </div>
+      <div class="book-right">
+        <h1>The Starless Sea</h1>
+        <p class="author">by Erin Morgenstern</p>
+        <div class="rating">
+          ★ 4.1 <span>(2,340 ratings)</span>
+        </div>
+        
+        <div class="badges">
+          <span class="badge">Fantasy</span>
+          <span class="badge">Adventure</span>
+          <span class="badge">Philosophy</span>
+          <span class="badge">Mental Health</span>
+          <span class="badge">Science Fiction</span>
+        </div>
+
+        <!-- Awards -->
+        <div class="award">
+          <div>🏆</div>
+          <div>
+            <p class="award-title">Award Recognition</p>
+            <p>Goodreads Choice Award Nominee for Fiction (2020)</p>
+          </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+
+          <!-- Radio buttons to control tabs -->
+          <input type="radio" name="tab" id="tab-description" checked>
+          <input type="radio" name="tab" id="tab-reviews">
+
+          <!-- Tab labels -->
+          <div class="tab-buttons">
+            <label for="tab-description" class="tab-label">Description</label>
+            <label for="tab-reviews" class="tab-label">Reviews (125,420)</label>
+          </div>
+
+          <!-- Tab content -->
+          <div class="tab-content" id="description">
+            <p>
+              Somewhere out beyond the edge of the universe there is a library that contains an infinite number of books, each one the story of another reality. One tells the story of your life as it is, along with another book for the other life you could have lived if you had made a different choice at any point in your life.
+            </p>
+          </div>
+
+          <div class="tab-content" id="reviews">
+            <div class="review-card">
+              <div class="review-avatar">SJ</div>
+              <div class="review-content">
+                <p class="review-text">This book absolutely changed my perspective on life. The concept is brilliant and the execution is flawless.</p>
+                <span class="review-author">- Sarah Johnson</span>
+              </div>
+            </div>
+            <div class="review-card">
+              <div class="review-avatar">MC</div>
+              <div class="review-content">
+                <p class="review-text">A beautiful exploration of choices and regret. The writing is poignant and the story stays with you.</p>
+                <span class="review-author">- Michael Chen</span>
+              </div>
+            </div>
+            <button class="btn btn-primary load-more-btn">Load More Reviews</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    <!-- Similar Books Carousel-->
+    <section class="similar-books">
+      <h2>Readers Also Enjoyed</h2>
+      <div class="carousel">
+        <div class="book-card">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1584633432l/50623864.jpg" alt="Addie LaRue">
+          <h3>The Invisible Life of Addie LaRue</h3>
+          <p>V.E. Schwab</p>
+          <div class="rating">★ 4.3</div>
+        </div>
+        <div class="book-card">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597695864i/54493401.jpg" alt="Project Hail Mary">
+          <h3>Project Hail Mary</h3>
+          <p>Andy Weir</p>
+          <div class="rating">★ 4.7</div>
+        </div>
+        <div class="book-card">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1664458703i/32620332.jpg" alt="Evelyn Hugo">
+          <h3>The Seven Husbands of Evelyn Hugo</h3>
+          <p>Taylor Jenkins Reid</p>
+          <div class="rating">★ 4.5</div>
+        </div>
+        <!-- Add more book cards as needed -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+  </footer>
+
+
+
+</body>
+</html>
+

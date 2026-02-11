@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@400;500;600&display=swap");
+
+/*:root selector is used to define CSS variables that can be reused throughout the stylesheet. It allows for easier maintenance and consistency in design by centralizing the color definitions.*/
+:root {
+  --cream: #F4F1EA;
+  --sage: #E8F5E9;
+  --brown: #382110;
+  --gold: #C8A882;
+  --gold-dark: #A68860;
+  --text-muted: #6b6b6b;
+  --border: #e5e5e5;
+}
+
+/* * means universal selector, applies to all elements. Setting box-sizing to border-box makes it easier to manage element sizes, as padding and borders are included in the total width and height of elements. This helps maintain consistent layouts and prevents unexpected overflow issues when adding padding or borders to elements.*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans 3", sans-serif;
+  color: #1f2937;;
+  margin: 0;
+  background: white;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent element for better consistency */
+}
+
+
+

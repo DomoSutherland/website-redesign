@@ -1,0 +1,143 @@
+/* Footer Styles */
+
+.site-footer {
+  border-top: none;
+  background: #382110;
+  color: white;
+}
+
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 32px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+/* Links column */
+.footer-heading {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #c8a882
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  font-size: 13px;
+  color: #d1c7bc;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-meta {
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 12px;
+  color: #b7ada3;
+}
+
+/* Social column */
+
+.social-media-icons {
+  text-align: left;
+}
+
+.social-label {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.social-icons svg {
+  fill: white;
+  width: 18px;
+  height: 18px;
+}
+
+
+/* Brand column */
+
+.footer-brand {
+  max-width: 320px;
+}
+
+.footer-logo {
+  height: 32px;
+  margin-bottom: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-description {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d1c7bc;
+  margin-bottom: 20px;
+}
+
+/* App buttons */
+
+.footer-apps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.app-button {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+}
+
+.app-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.app-eyebrow {
+  display: block;
+  font-size: 11px;
+  color: #cfc6bb;
+}
+
+.app-name {
+  font-size: 14px;
+  font-weight: 600;
+}
+

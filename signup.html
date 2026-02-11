@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Sample Page</title>
+        
+        <link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/home_content.css">
+        <link rel="stylesheet" href="css/browse.css">
+        <link rel="stylesheet" href="css/book-detail.css">
+        <link rel="stylesheet" href="css/signup.css">
+
+    </head>
+    <body>
+
+        <header>    
+
+            <div class="nav-bar"> <!--All elements in the navigation bar-->
+               
+                    <div class="logo">
+                        <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Goodreads_logo_2025.svg" 
+                        alt="Goodreads"
+                        />
+                    </div>
+
+                    <nav> <!--Navigation links-->
+                        <a href="index.html">Home</a>
+                        <a href="browse.html">Browse</a>
+                        <a href="#My Books">My Books</a>
+                        <a href="#Community">Community</a>
+                    </nav>
+
+                    <div class="search-bar-header">
+                        <input type="text" placeholder="Search..." />
+                    </div>
+
+                    <div class="header-actions"> <!--User action buttons-->
+                        <button class="icon-button" aria-label="Notifications">
+                            <svg viewBox="0 0 24 24">
+                            <path d="M12 22a2.5 2.5 0 0 0 2.5-2.5h-5A2.5 2.5 0 0 0 12 22zm6-6V11a6 6 0 1 0-12 0v5l-2 2v1h16v-1l-2-2z"/>
+                            </svg>
+                        </button>
+
+                        <button class="icon-button" aria-label="Profile">
+                            <svg viewBox="0 0 24 24">
+                            <path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5zm0 2c-4.4 0-8 2.2-8 5v1h16v-1c0-2.8-3.6-5-8-5z"/>
+                            </svg>
+                        </button>
+
+                        <!--<span class="user-icon">Sarah M.</span> -->
+                        <span>Sarah M.</span>
+                        <a href="signup.html" class="nav-signup">Sign Up</a>
+                    </div>
+               
+               
+
+            </div>
+        </header>
+
+        <main class="signup-page">
+            <section class="signup-hero">
+                <h1>Join Goodreads</h1>
+                <p>Discover and track books you'll love.</p>
+            </section>
+
+            <section class="signup-form-section">
+                <form class="signup-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Jane Doe"
+                        required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="you@example.com"
+                        required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Create a password"
+                        required
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="favorite-genre">Favorite Genre</label>
+                        <select id="favorite-genre" name="favorite-genre">
+                        <option value="">Select a genre</option>
+                        <option>Fiction</option>
+                        <option>Fantasy</option>
+                        <option>Romance</option>
+                        <option>Science Fiction</option>
+                        <option>Non-fiction</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="signup-button">
+                        Create Account
+                    </button>
+
+                    <p class="form-footer">
+                        Already have an account? <a href="#">Sign in</a>
+                    </p>
+                </form>
+
+            </section>
+        </main>
+
+    </body>
+</html>
+
+
