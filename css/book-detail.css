@@ -7,6 +7,41 @@
   color: #333;
 }
 
+.book-detail {
+  display: flex;
+  gap: 32px;
+  background: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 32px;
+}
+
+/* LEFT COLUMN */
+.book-left {
+  flex: 0 0 300px; /* fixed width for the sidebar */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.book-left .book-cover img {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.book-left .book-actions { display: flex; flex-direction: column; gap: 8px; }
+.book-left .badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.book-left .stats { font-size: 14px; color: #555; }
+.book-left .award { display: flex; gap: 16px; background: linear-gradient(to right,#C8A88220,transparent); border-left: 4px solid #C8A882; padding: 1rem; border-radius: 0.5rem; }
+
+/* RIGHT COLUMN */
+.book-right {
+  flex: 1; /* take remaining space */
+}
+.book-right h1 { margin: 0; font-size: 32px; }
+.book-right .author { color: #555; margin-bottom: 8px; }
+.book-right .rating { color: #f5a623; margin-bottom: 16px; }
+
 
 /* BADGES*/
 .badges {
@@ -47,8 +82,6 @@
   background: var(--gold-dark);
 }
 
-/* STATS*/
-
 
 /* AWARD*/
 .award {
@@ -72,20 +105,18 @@
   border-bottom: 2px solid #E5E5E5;
   margin-bottom: 1rem;
 }
+
 .tab-label {
   padding: 0.75rem 1rem;
   cursor: pointer;
   font-weight: 500;
 }
 
-#tab-description:checked ~ .tab-buttons label, 
-#tab-reviews:checked ~ .tab-buttons label {
-  border-bottom: 3px solid var(--gold);
-  color: var(--brown);
-}
-.tab-content {
-  display: none;
-  padding: 1rem 0;
+/* Active tab styles AI assisted */
+#tab-description:checked ~ .tab-buttons label[for="tab-description"],
+#tab-reviews:checked ~ .tab-buttons label[for="tab-reviews"] {
+  border-bottom: 3px solid #6B9B7C;
+  color: #6B9B7C;
 }
 
 #tab-description:checked ~ #description,
@@ -93,10 +124,9 @@
   display: block;
 }
 
-#tab-description:checked ~ .tab-buttons label[for="tab-description"],
-#tab-reviews:checked ~ .tab-buttons label[for="tab-reviews"] {
-  border-bottom: 3px solid #6B9B7C;
-  color: #6B9B7C;
+.tab-content {
+  display: none;
+  padding: 1rem 0;
 }
 
 
@@ -153,40 +183,8 @@
 }
 
 
-.book-detail {
-  display: flex;
-  gap: 32px;
-  background: #fff;
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  margin-bottom: 32px;
-}
 
-/* LEFT COLUMN */
-.book-left {
-  flex: 0 0 300px; /* fixed width for the sidebar */
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.book-left .book-cover img {
-  width: 100%;
-  border-radius: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-.book-left .book-actions { display: flex; flex-direction: column; gap: 8px; }
-.book-left .badges { display: flex; flex-wrap: wrap; gap: 8px; }
-.book-left .stats { font-size: 14px; color: #555; }
-.book-left .award { display: flex; gap: 16px; background: linear-gradient(to right,#C8A88220,transparent); border-left: 4px solid #C8A882; padding: 1rem; border-radius: 0.5rem; }
 
-/* RIGHT COLUMN */
-.book-right {
-  flex: 1; /* take remaining space */
-}
-.book-right h1 { margin: 0; font-size: 32px; }
-.book-right .author { color: #555; margin-bottom: 8px; }
-.book-right .rating { color: #f5a623; margin-bottom: 16px; }
 
 
 

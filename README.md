@@ -34,6 +34,6 @@ Tools used
     - Debugging layout and styling issues
     - Explaining HTML and CSS concepts
     - Improving code structure and documentation
-    - Suggestions for elements wanted to add eg. horizontal scrollbar
+    - Suggestions for elements wanted to add eg. horizontal scrollbar, notification icon
 
 
